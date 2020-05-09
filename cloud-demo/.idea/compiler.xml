@@ -9,6 +9,7 @@
         <module name="common-api" />
         <module name="eureka-client" />
         <module name="eureka-server" />
+        <module name="feign-client" />
         <module name="ribbon-client" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="common-api" options="-parameters -nowarn" />
       <module name="eureka-client" options="-parameters -nowarn" />
       <module name="eureka-server" options="-parameters -nowarn" />
+      <module name="feign-client" options="-parameters -nowarn" />
       <module name="ribbon-client" options="-parameters -nowarn" />
     </option>
   </component>

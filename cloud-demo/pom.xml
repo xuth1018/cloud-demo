@@ -19,6 +19,7 @@
         <module>eureka-client</module>
         <module>common-api</module>
         <module>ribbon-client</module>
+        <module>feign-client</module>
     </modules>
 
     <properties>
