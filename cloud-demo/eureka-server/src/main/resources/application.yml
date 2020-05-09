@@ -1,18 +1,43 @@
+---
 server:
   port: 7001
 
 spring:
+  profiles: peer1
   application:
     name: eureka-server
 
 eureka:
   instance:
     hostname: eureka-server7001
-
+    instance-id: eureka-server7001
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka-server7002:7002/eureka/
+  server:
+    enable-self-preservation: false     #关闭保护机制
+    eviction-interval-timer-in-ms: 3000 #剔除失效服务 3s
+
+---
+server:
+  port: 7002
+
+spring:
+  profiles: peer2
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: eureka-server7002
+    instance-id: eureka-server7002
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka/
+  server:
+    enable-self-preservation: false     #关闭保护机制
+    eviction-interval-timer-in-ms: 3000 #剔除失效服务 3s
+
+
 
 

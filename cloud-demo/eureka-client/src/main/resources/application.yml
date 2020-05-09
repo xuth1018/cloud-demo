@@ -1,0 +1,47 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /eureka-client
+
+spring:
+  profiles: client1
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: eureka-client8001
+    lease-expiration-duration-in-seconds: 5 #客户端向服务端发送心跳 默认30
+    lease-renewal-interval-in-seconds: 7  #服务端在收到最后一次心跳之后等待的时间上限，单位为秒，超过则剔除 默认90
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5 #本地缓存时间
+
+---
+server:
+  port: 8002
+  servlet:
+    context-path: /eureka-client
+
+spring:
+  profiles: client2
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: eureka-client8002
+    prefer-ip-address: false
+    lease-expiration-duration-in-seconds: 5 #客户端向服务端发送心跳 默认30
+    lease-renewal-interval-in-seconds: 7  #服务端在收到最后一次心跳之后等待的时间上限，单位为秒，超过则剔除 默认90
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5 #本地缓存时间
+
+

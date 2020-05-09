@@ -17,6 +17,8 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>common-api</module>
+        <module>ribbon-client</module>
     </modules>
 
     <properties>

@@ -6,7 +6,6 @@
         <groupId>com.xx.cloud</groupId>
         <artifactId>cloud-demo</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath></relativePath>
     </parent>
 
     <artifactId>eureka-server</artifactId>
