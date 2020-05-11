@@ -1,11 +1,11 @@
 server:
-  port: 8004
+  port: 8003
   servlet:
-    context-path: /ribbon-client
+    context-path: /feign-client
 
 spring:
   application:
-    name: ribbon-client
+    name: feign-client
 
 eureka:
   client:
@@ -13,7 +13,10 @@ eureka:
       defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
     registry-fetch-interval-seconds: 5
   instance:
-    instance-id: ribbon-client
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 7
     hostname: localhost
-    lease-expiration-duration-in-seconds: 5
-    lease-renewal-interval-in-seconds: 7
+    instance-id: feign-client
+feign:
+  hystrix:
+    enabled: true
