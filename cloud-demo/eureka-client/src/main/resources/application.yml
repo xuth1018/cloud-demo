@@ -1,10 +1,7 @@
 server:
   port: 8001
-  servlet:
-    context-path: /eureka-client
 
 spring:
-  profiles: client1
   application:
     name: eureka-client
 
@@ -12,21 +9,22 @@ eureka:
   instance:
     hostname: localhost
     instance-id: eureka-client8001
-    lease-expiration-duration-in-seconds: 5 #¿Í»§¶ËÏò·şÎñ¶Ë·¢ËÍĞÄÌø Ä¬ÈÏ30
-    lease-renewal-interval-in-seconds: 7  #·şÎñ¶ËÔÚÊÕµ½×îºóÒ»´ÎĞÄÌøÖ®ºóµÈ´ıµÄÊ±¼äÉÏÏŞ£¬µ¥Î»ÎªÃë£¬³¬¹ıÔòÌŞ³ı Ä¬ÈÏ90
+    lease-expiration-duration-in-seconds: 5 #ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä¬ï¿½ï¿½30
+    lease-renewal-interval-in-seconds: 7  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½È´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ş£ï¿½ï¿½ï¿½Î»Îªï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş³ï¿½ Ä¬ï¿½ï¿½90
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
-    registry-fetch-interval-seconds: 5 #±¾µØ»º´æÊ±¼ä
-
+    registry-fetch-interval-seconds: 5 #ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½Ê±ï¿½ï¿½#
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
 ---
 server:
   port: 8002
-  servlet:
-    context-path: /eureka-client
-
 spring:
   profiles: client2
   application:
@@ -37,11 +35,11 @@ eureka:
     hostname: localhost
     instance-id: eureka-client8002
     prefer-ip-address: false
-    lease-expiration-duration-in-seconds: 5 #¿Í»§¶ËÏò·şÎñ¶Ë·¢ËÍĞÄÌø Ä¬ÈÏ30
-    lease-renewal-interval-in-seconds: 7  #·şÎñ¶ËÔÚÊÕµ½×îºóÒ»´ÎĞÄÌøÖ®ºóµÈ´ıµÄÊ±¼äÉÏÏŞ£¬µ¥Î»ÎªÃë£¬³¬¹ıÔòÌŞ³ı Ä¬ÈÏ90
+    lease-expiration-duration-in-seconds: 5 #ï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä¬ï¿½ï¿½30
+    lease-renewal-interval-in-seconds: 7  #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½È´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ş£ï¿½ï¿½ï¿½Î»Îªï¿½ë£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş³ï¿½ Ä¬ï¿½ï¿½90
   client:
     service-url:
       defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
-    registry-fetch-interval-seconds: 5 #±¾µØ»º´æÊ±¼ä
+    registry-fetch-interval-seconds: 5 #ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½Ê±ï¿½ï¿½#
 
 

@@ -12,7 +12,7 @@ spring:
           search-paths: config
           username: 2624235265@qq.com
           password: qq101896
-      profile: git #默认git
+      profile: dev
 
 eureka:
   instance:
