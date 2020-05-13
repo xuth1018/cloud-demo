@@ -1,23 +1,14 @@
 server:
   port: 9001
-spring:
-  application:
-    name: config-server
-  cloud:
-    config:
-      label: master
-      server:
-        git:
-          uri: https://github.com/xuth1018/cloud-demo
-          search-paths: config
-          username: 2624235265@qq.com
-          password: qq101896
-      profile: dev
+
 
 eureka:
   instance:
     hostname: localhost
     instance-id: config-server
+    lease-expiration-duration-in-seconds: 7
+    lease-renewal-interval-in-seconds: 5
   client:
     service-url:
       defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5

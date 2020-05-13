@@ -1,0 +1,26 @@
+server:
+  port: 9100
+
+spring:
+  application:
+    name: zipkin-server
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: zipkin-server
+    lease-expiration-duration-in-seconds: 7
+    lease-renewal-interval-in-seconds: 5
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5
+
+management:
+  metrics:
+    web:
+      server:
+        request:
+          autotime:
+            enabled: false

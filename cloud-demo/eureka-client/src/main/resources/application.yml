@@ -9,19 +9,15 @@ eureka:
   instance:
     hostname: localhost
     instance-id: eureka-client8001
-    lease-expiration-duration-in-seconds: 5 #�ͻ��������˷������� Ĭ��30
-    lease-renewal-interval-in-seconds: 7  #��������յ����һ������֮��ȴ���ʱ�����ޣ���λΪ�룬�������޳� Ĭ��90
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 7
   client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
-    registry-fetch-interval-seconds: 5 #���ػ���ʱ��#
+    registry-fetch-interval-seconds: 5
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: "*"
 ---
 server:
   port: 8002
@@ -35,11 +31,9 @@ eureka:
     hostname: localhost
     instance-id: eureka-client8002
     prefer-ip-address: false
-    lease-expiration-duration-in-seconds: 5 #�ͻ��������˷������� Ĭ��30
-    lease-renewal-interval-in-seconds: 7  #��������յ����һ������֮��ȴ���ʱ�����ޣ���λΪ�룬�������޳� Ĭ��90
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 7
   client:
-    service-url:
-      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
-    registry-fetch-interval-seconds: 5 #���ػ���ʱ��#
+    registry-fetch-interval-seconds: 5
 
 

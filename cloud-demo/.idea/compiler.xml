@@ -6,24 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="admin-server" />
         <module name="common-api" />
         <module name="config-server" />
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="feign-client" />
         <module name="ribbon-client" />
+        <module name="zipkin-server" />
         <module name="zuul-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-server" options="-parameters -nowarn" />
       <module name="common-api" options="-parameters -nowarn" />
       <module name="config-server" options="-parameters -nowarn" />
       <module name="eureka-client" options="-parameters -nowarn" />
       <module name="eureka-server" options="-parameters -nowarn" />
       <module name="feign-client" options="-parameters -nowarn" />
       <module name="ribbon-client" options="-parameters -nowarn" />
+      <module name="zipkin-server" options="-parameters -nowarn" />
       <module name="zuul-api" options="-parameters -nowarn" />
     </option>
   </component>

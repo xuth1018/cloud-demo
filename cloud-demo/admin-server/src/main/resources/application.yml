@@ -1,11 +1,16 @@
 server:
-  port: 8003
-  servlet:
-    context-path: /feign-client
-
+  port: 9020
 spring:
   application:
-    name: feign-client
+    name: admin-server
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
 
 eureka:
   client:
@@ -16,7 +21,4 @@ eureka:
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 7
     hostname: localhost
-    instance-id: feign-client
-feign:
-  hystrix:
-    enabled: true
+    instance-id: admin-server
