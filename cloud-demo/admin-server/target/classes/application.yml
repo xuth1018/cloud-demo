@@ -1,0 +1,24 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: admin-server
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 7
+    hostname: localhost
+    instance-id: admin-server

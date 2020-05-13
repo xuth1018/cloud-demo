@@ -4,7 +4,12 @@ server:
 spring:
   application:
     name: eureka-client
-
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:9020
+        instance:
+          service-url: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
 eureka:
   instance:
     hostname: localhost

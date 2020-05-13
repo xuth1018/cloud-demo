@@ -14,8 +14,8 @@ spring:
       enabled: true
       trace:
         enabled: true
+
 eureka:
   client:
     service-url:
       defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
-
