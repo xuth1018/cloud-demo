@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bdd3760-375f-4782-b5f3-684bea1a3125" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/RabbitMqApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/config/RabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/contoller/OrderApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/rabbit/MsgProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/rabbit/MsgReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ-demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-api/src/main/java/com/xx/cloud/ZuulApiApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-api/src/main/java/com/xx/cloud/ZuulApiApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="5bdd3760-375f-4782-b5f3-684bea1a3125" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/eureka-client/target/" />
@@ -35,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/config/RabbitConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+            <state relative-caret-position="-38">
+              <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2500#2501#0" expanded="true" />
@@ -85,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/rabbit/MsgProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="81">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,6 +130,7 @@
       <find>FallbackProvider</find>
       <find>log</find>
       <find>boot</find>
+      <find>mode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -602,7 +593,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589788169736" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589790899983" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1329,12 +1320,12 @@
       <workItem from="1588829876057" duration="7115000" />
       <workItem from="1588839130859" duration="55384000" />
       <workItem from="1589248860511" duration="3272000" />
-      <workItem from="1589766098011" duration="12592000" />
+      <workItem from="1589766098011" duration="13791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134531000" />
+    <option name="totallyTimeSpent" value="135730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1352,20 +1343,20 @@
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.19512194" visible="true" weight="0.290469" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.19512194" visible="true" weight="0.290469" />
       <window_info id="Structure" order="5" sideWeight="0.80487806" side_tool="true" weight="0.290469" />
       <window_info id="Alibaba Cloud Explorer" order="6" weight="0.3290469" />
       <window_info id="Favorites" order="7" sideWeight="0.5036675" side_tool="true" weight="0.22945736" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="REST Client" order="0" weight="0.52040815" />
-      <window_info anchor="bottom" id="Run Dashboard" order="1" sideWeight="0.8007752" visible="true" weight="0.3713799" />
+      <window_info anchor="bottom" id="Run Dashboard" order="1" sideWeight="0.8007752" weight="0.3713799" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32879046" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.1992248" side_tool="true" weight="0.37302977" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.34150612" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3407155" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32879046" />
       <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49924356" weight="0.3270869" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
@@ -1644,13 +1635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE.jar!/org/springframework/amqp/rabbit/connection/CachingConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE.jar!/org/springframework/amqp/rabbit/connection/ConnectionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1757,16 +1741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/rabbit/MsgProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.2.5.RELEASE/spring-amqp-2.2.5.RELEASE.jar!/org/springframework/amqp/core/AbstractDeclarable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
@@ -1817,16 +1791,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.2.5.RELEASE/spring-rabbit-2.2.5.RELEASE.jar!/org/springframework/amqp/rabbit/connection/CachingConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="1309" column="8" selection-start-line="1309" selection-start-column="8" selection-end-line="1309" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/config/RabbitConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        <state relative-caret-position="-38">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2500#2501#0" expanded="true" />
             <element signature="e#2859#2860#0" expanded="true" />
             <element signature="e#2996#2997#0" expanded="true" />
             <element signature="e#3130#3131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ-demo/src/main/java/com/xx/cloud/rabbit/MsgProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
