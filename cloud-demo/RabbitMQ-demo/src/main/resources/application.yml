@@ -1,0 +1,23 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: rabbitmq-demo
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server7001:7001/eureka,http://eureka-server7002:7002/eureka
+    registry-fetch-interval-seconds: 5
+
+  instance:
+    instance-id: rabbitmq-demo
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 7
+    lease-renewal-interval-in-seconds: 5

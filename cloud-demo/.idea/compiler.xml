@@ -12,6 +12,7 @@
         <module name="eureka-client" />
         <module name="eureka-server" />
         <module name="feign-client" />
+        <module name="RabbitMQ-demo" />
         <module name="ribbon-client" />
         <module name="zipkin-server" />
         <module name="zuul-api" />
@@ -20,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="RabbitMQ-demo" options="-parameters -nowarn" />
       <module name="admin-server" options="-parameters -nowarn" />
       <module name="common-api" options="-parameters -nowarn" />
       <module name="config-server" options="-parameters -nowarn" />

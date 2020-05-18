@@ -24,6 +24,7 @@
         <module>config-server</module>
         <module>zipkin-server</module>
         <module>admin-server</module>
+        <module>RabbitMQ-demo</module>
     </modules>
 
     <properties>
